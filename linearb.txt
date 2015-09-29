@@ -1,0 +1,292 @@
+### File header must not be modified
+### This file must be encoded into UTF-8.
+### This table under LGPL
+### comments start with ### not single #
+### Derive from the format of SCIM Table, so you can modify the table from
+### scim-tables' table
+SCIM_Generic_Table_Phrase_Library_TEXT
+VERSION_1_0
+
+### Begin Table definition.
+BEGIN_DEFINITION
+
+### License
+LICENSE = LGPL
+
+### An unique id to distinguish this table among others.
+### Use uuidgen to generate this kind of id.
+UUID = 17cf57dd-0a4c-4eab-9012-708fb744a1f5
+
+### A unique number indicates the version of this file.
+### For example the last modified date of this file.
+### This number must be less than 2^32.
+### Just make your table version-able
+SERIAL_NUMBER = 20150625
+
+### ICON can be any format as long as your pygtk can recognized
+### the most widely ones are "png" and "svg", letter one is recommended
+ICON = linearb.svg
+
+### The default name of this table, this is needed
+NAME = LinearB-Syllabary
+
+### Description
+DESCRIPTION = Linear B input engine table for IBus Table. Linear B is a syllabic script that was used for writing Mycenaean Greek, the earliest attested language form of Greek.
+
+### Supported languages of this table
+### sigle "zh_CN" just be recognized as zh_CN,
+### but "zh_CN, zh_HK" or more zh_XX will be recognized as zh;
+### and "en_US, zh_CN" will be just ignored.
+LANGUAGES = en_US
+
+### The author of this table
+AUTHOR = http://www.kinezika.info <linearb@kinezika.info> 
+
+### Prompt string to be displayed in the status area, CN will be replaced by
+### the gettext tools in runtime as 中.
+STATUS_PROMPT = ΕΛ
+
+### Valid input chars.
+VALID_INPUT_CHARS = abcdefghijklmnopqrstuvwxyzQWERTYUIO.,
+
+### Layout
+LAYOUT = us
+
+### The max number of input keys for every phrase or character.
+MAX_KEY_LENGTH = 6
+
+### Use auto_commit mode as default
+AUTO_COMMIT = FALSE
+
+### Use full width punctuation by default
+DEF_FULL_WIDTH_PUNCT = FALSE
+### Not use full width letter by default
+DEF_FULL_WIDTH_LETTER = FALSE
+
+### Whether user are allow to define phrase, default is true
+### You have to define the word construction rules below.
+### For input methods which do not input phrases, set this to False
+USER_CAN_DEFINE_PHRASE = FALSE
+
+### Whether support PinYin Mode, default is true.
+### this feature is just for Chinese, set it to False if your IM is not
+### Chinese.
+PINYIN_MODE = FALSE
+
+### If true then the phrases' frequencies will be adjusted dynamically
+### according your using frequency.
+DYNAMIC_ADJUST = TRUE 
+
+### Some characters whose frequencies should be fix all the time, e.g. 
+### some punctuations
+### NO_CHECK_CHARS = 
+
+### Rules for constructing user defined phrase
+### "ce" stands for "ci equal", a Chinese English :), means "phrase length
+### equal to", thus ce2 -> phrase length equal to 2; and "ca" means "phrase
+### length equal or above", so ca4 -> phrase length equal or above 4.
+### p21 -> the 1st key of 2nd character in the phrase, and so on.
+### Each rule separate via ";". 
+### Example below is a complete rule-set, 
+### becuase [2,2] ∩ [3,3] ∩ [4,+∞] = [2,+∞], which is the range of length
+### of phrase. This have to be satisfied if you need ibus-table to build up
+### your own inputed phrase via your daily using.
+### RULES = ce2:p11+p12+p21+p22;ce3:p11+p21+p22+p31;ca4:p11+p21+p31+p41
+
+END_DEFINITION
+
+### Begin Table data.
+### Format of every line whose formated in "input_keys\tphrase\tfreq\n" is an
+### entry.
+### From left to right, the 1st column are the input key combination that you
+### entered via keyboard; the 2nd column are presented character or phrase of
+### the key combination you want; the 3rd column are frequency of the character
+### or phrase.
+BEGIN_TABLE
+a	𐀀	1
+e	 𐀁	1
+i	𐀂	1
+o	𐀃	1
+u	𐀄	1
+da	𐀅	1
+de	𐀆	1
+di	𐀇	1
+do	𐀈	1
+du	𐀉	1
+ja	𐀊	1
+je	𐀋	1
+jo	𐀍	1
+ka	𐀏	1
+ke	𐀐	1
+ki	𐀑	1
+ko	𐀒	1
+ku	𐀓	1
+ma	𐀔	1
+me	𐀕	1
+mi	𐀖	1
+mo	𐀗	1
+mu	𐀘	1
+na	𐀙	1
+ne	𐀚	1
+ni	𐀛	1
+no	𐀜	1
+nu	𐀝	1
+pa	𐀞	1
+pe	𐀟	1
+pi	𐀠	1
+po	𐀡	1
+pu	𐀢	1
+qa	𐀣	1
+qe	𐀤	1
+qi	𐀥	1
+qo	𐀦	1
+ra	𐀨	1
+re	𐀩	1
+ri	𐀪	1
+ro	𐀫	1
+ru	𐀬	1
+sa	𐀭	1
+se	𐀮	1
+si	𐀯	1
+so	𐀰	1
+su	𐀱	1
+ta	𐀲	1
+te	𐀳	1
+ti	𐀴	1
+to	𐀵	1
+tu	𐀶	1
+wa	𐀷	1
+we	𐀸	1
+wi	𐀹	1
+wo	𐀺	1
+za	𐀼	1
+ze	𐀽	1
+zo	𐀿	1
+ha	𐁀	1
+ai	𐁁	1
+au	𐁂	1
+dwe	𐁃	1
+dwo	𐁄	1
+nwa	𐁅	1
+pte	𐁇	1
+phu	𐁆	1
+rya	𐁈	1
+rai	𐁉	1
+ryo	𐁊	1
+tya	𐁋	1
+twe	𐁌	1
+two	𐁍	1
+vir	𐂀	1
+mul	𐂁	1
+cerv	𐂂	1
+equ	𐂃	1
+equf	𐂄	1
+equm	𐂅	1
+ovis	𐀥	1
+ovisf	𐂆	1
+ovism	𐂇	1
+cap	𐁒	1
+capf	𐂈	1
+capm	𐂉	1
+sus	𐁂	1
+susf	𐂊	1
+susm	𐂋	1
+bos	𐀘	1
+bosf	𐂌	1
+bosm	𐂍	1
+gra	𐂎	1
+hord	𐂏	1
+oliv	𐂐	1
+ficus	𐀛	1
+farina	𐀎	1
+arom	𐂑	1
+ses	𐀭	1
+cumin	𐀓	1
+cel	𐀯	1
+fen	𐀔	1
+cyp	𐂒	1
+kapo	𐂓	1
+kanako	𐂔	1
+ole	𐂕	1
+vin	𐂖	1
+ung	𐂘	1
+honey	𐂙	1
+sar	𐃟	1
+tri	𐃠	1
+poc	𐃡	1
+urceus	𐃢	1
+hirnea	𐃣	1
+hirnu	𐃤	1
+hyd	𐃥	1
+tria	𐃦	1
+pat	𐃧	1
+amph	𐃨	1
+sjar	𐃩	1
+sit	𐃫	1
+lanx	𐃬	1
+scam	𐃄	1
+alv	𐃅	1
+has	𐃆	1
+sag	𐃇	1
+pel	𐃈	1
+dag	𐃉	1
+gla	𐃊	1
+big	𐃌	1
+cur	𐃍	1
+caps	𐃎	1
+rota	𐃏	1
+unus	𐄇	1
+duo	𐄈	1
+tres	𐄉	1
+quat	𐄊	1
+quin	𐄋	1
+sex	𐄌	1
+sept	𐄍	1
+oct	𐄎	1
+nov	𐄏	1
+dec	𐄐	1
+vig	𐄑	1
+trig	𐄒	1
+quad	𐄓	1
+quinq	𐄔	1
+sexa	𐄕	1
+septu	𐄖	1
+octo	𐄗	1
+nona	𐄘	1
+cent	𐄙	1
+duc	𐄚	1
+trec	𐄛	1
+quadr	𐄜	1
+quing	𐄝	1
+sesc	𐄞	1
+septi	𐄟	1
+octi	𐄠	1
+nong	𐄡	1
+mil	𐄢	1
+dmil	𐄣	1
+tmil	𐄤	1
+qmil	𐄥	1
+qumil	𐄦	1
+smil	𐄧	1
+spmil	𐄨	1
+omil	𐄩	1
+nmil	𐄪	1
+demil	𐄫	1
+dumil	𐄬	1
+trmil	𐄭	1
+quamil	𐄮	1
+quimil	𐄯	1
+semil	𐄰	1
+sepmil	𐄱	1
+octmil	𐄲	1
+nonmil	𐄳	1
+Q	𐄷	1
+W	𐄸	1
+E	𐄹	1
+R	𐄺	1
+T	𐄻	1
+Y	𐄼	1
+U	𐄽	1
+I	𐄾	1
+O	𐄿	1
+END_TABlE
