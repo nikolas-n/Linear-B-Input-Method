@@ -1,5 +1,5 @@
 # Linear B input method
-Input method based on [ibus](https://github.com/phuang/ibus) (Linux) for the mycenean script of Linear B.
+Input method based on [ibus](https://github.com/phuang/ibus) (Linux) for the mycenean script of Linear B. The build was guided by [Study Mongolian](http://www.studymongolian.net/technical/how-to-create-linux-input-method-editor/). 
 
 ## How to install
 1. Install ibus
