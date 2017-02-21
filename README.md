@@ -1,4 +1,4 @@
-# How to write in Linear B on your Linux computer
+# How to write in Linear B on your GNU/Linux computer
 Input method based on the [ibus](https://github.com/phuang/ibus) package for the [Mycenean Greek](https://en.wikipedia.org/wiki/Mycenaean_Greek) script of [Linear B](https://en.wikipedia.org/wiki/Linear_B). The build was guided by [Study Mongolian](http://www.studymongolian.net/technical/how-to-create-linux-input-method-editor/). 
 
 ## How to install
