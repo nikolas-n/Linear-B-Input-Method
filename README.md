@@ -1,3 +1,8 @@
+# Online Transliterator of Linear B (another github repo)
+If you're interested, I have made (out of a fork) an online transliterator of Linear B whose code is [here](https://github.com/nikolas-n/LinearB-transliterator) and it can be used [here](http://linear-b.kinezika.info).
+
+---
+
 # How to write in Linear B on your GNU/Linux computer
 Input method based on the [ibus](https://github.com/phuang/ibus) package for the [Mycenean Greek](https://en.wikipedia.org/wiki/Mycenaean_Greek) script of [Linear B](https://en.wikipedia.org/wiki/Linear_B). The build was guided by [Study Mongolian](http://www.studymongolian.net/technical/how-to-create-linux-input-method-editor/). 
 
